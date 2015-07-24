@@ -18,7 +18,19 @@ e.g.:
 
 == Boot under Windows
 
-You can download these following two file:
+==== prepare
+
+Currently the DrQueue will be installed with pip as a editable from git repository.
+So you need **git** under windows :(
+
+You can install git for windows with: https://msysgit.github.io/
+and choose in the installer: **Use Git from the Windows Command Prompt** (So that the **git** command is available via **PATH**)
+
+**DrQueueIPython** is currently only Python 2 compatible. So install Python 2.7.x before start.
+
+==== boot
+
+Download these following two file:
 * https://raw.githubusercontent.com/jedie/BootDrQueue/master/boot_drqueue_env.py
 * https://raw.githubusercontent.com/jedie/BootDrQueue/master/boot_drqueue_env.cmd
 
