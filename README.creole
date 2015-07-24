@@ -1,0 +1,35 @@
+= Bootstrap for DrQueueIPython
+
+Python virtualenv bootstrap script for [[https://github.com/kaazoo/DrQueueIPython/|DrQueueIPython]]
+Using [[https://github.com/jedie/bootstrap_env|bootstrap_env]] tool.
+
+
+== Boot under Linux
+
+e.g.:
+{{{
+~$ wget https://raw.githubusercontent.com/jedie/BootDrQueue/master/boot_drqueue_env.py
+~$ python2 boot_drqueue_env.py ~/DrQueue_env
+~$ cd DrQueue_env/
+~/DrQueue_env$ source bin/activate
+...
+}}}
+
+
+== Boot under Windows
+
+You can download these following two file:
+* https://raw.githubusercontent.com/jedie/BootDrQueue/master/boot_drqueue_env.py
+* https://raw.githubusercontent.com/jedie/BootDrQueue/master/boot_drqueue_env.cmd
+
+Store them in the same direcotry, somewhere.
+Edit **boot_drqueue_env.cmd** for your needs and start it.
+
+The default **.cmd** batch file will:
+* use **C:\Python27\python.exe**
+* create env there: **%APPDATA%\DrQueueIPython\** (Will result in something like: **C:\Users\//YourUserName//\AppData\Roaming\DrQueueIPython\**)
+
+
+== Developer info
+
+To update bootstrap file call: **/bootstrap/create_bootstrap_file.py**
