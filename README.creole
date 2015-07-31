@@ -39,7 +39,7 @@ Edit **boot_drqueue_env.cmd** for your needs and start it.
 
 The default **.cmd** batch file will:
 * use **C:\Python27\python.exe**
-* create env there: **%APPDATA%\DrQueueIPython\** (Will result in something like: **C:\Users\//YourUserName//\AppData\Roaming\DrQueueIPython\**)
+* create env there: **%APPDATA%\DrQueue_env\** (Will result in something like: **C:\Users\//YourUserName//\AppData\Roaming\DrQueue_env\**)
 
 
 == Developer info

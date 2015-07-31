@@ -16,7 +16,7 @@ if NOT exist %boot_script% (
     exit 1
 )
 
-set destination=%APPDATA%\DrQueueIPython
+set destination=%APPDATA%\DrQueue_env
 mkdir %destination%
 if NOT exist %destination% (
     echo ERROR: '%destination%' doesn't exists?!?
