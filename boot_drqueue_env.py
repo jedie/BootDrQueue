@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 """
-    WARNING: This file is generated with: bootstrap_env v0.5.1
+    WARNING: This file is generated with: bootstrap_env v0.5.2
     https://pypi.python.org/pypi/bootstrap_env/
     script file: 'generate_bootstrap.pyc'
     used '.../local/lib/python2.7/site-packages/virtualenv.pyc' v13.1.0
@@ -1868,7 +1868,7 @@ def create_bootstrap_script(extra_text, python_version=''):
     return content.replace('##EXT' 'END##', extra_text)
 
 ###############################################################################
-## '.../src/bootstrap_env/bootstrap_env/utils/bootstrap_install_pip.py' START
+## '.../src/bootstrap-env/bootstrap_env/utils/bootstrap_install_pip.py' START
 INSTALL_PIP_OPTION="--install-pip"
 
 
@@ -1958,7 +1958,7 @@ def adjust_options(options, args):
 
 def after_install(options, home_dir):
     _install_pip(options, home_dir)
-## '.../src/bootstrap_env/bootstrap_env/utils/bootstrap_install_pip.py' END
+## '.../src/bootstrap-env/bootstrap_env/utils/bootstrap_install_pip.py' END
 ###############################################################################
     ###############################################################################
     ## '.../src/BootDrQueue/bootstrap/boot_sources/after_install.py' START
@@ -1975,7 +1975,8 @@ def after_install(options, home_dir):
 
     # install DrQueueIPython from github (readonly) as editable
     cmd = ["install", "--log=%s" % logfile]
-    cmd += ["-e", "git+https://github.com/kaazoo/DrQueueIPython.git#egg=DrQueueIPython"]
+    # cmd += ["-e", "git+https://github.com/kaazoo/DrQueueIPython.git#egg=DrQueueIPython"]
+    cmd += ["-e", "git+https://github.com/jedie/DrQueueIPython.git@develop#egg=DrQueueIPython"]
 
     env_subprocess.call_env_pip(cmd)
 

@@ -20,7 +20,8 @@ def after_install(options, home_dir):
 
     # install DrQueueIPython from github (readonly) as editable
     cmd = ["install", "--log=%s" % logfile]
-    cmd += ["-e", "git+https://github.com/kaazoo/DrQueueIPython.git#egg=DrQueueIPython"]
+    # cmd += ["-e", "git+https://github.com/kaazoo/DrQueueIPython.git#egg=DrQueueIPython"]
+    cmd += ["-e", "git+https://github.com/jedie/DrQueueIPython.git@develop#egg=DrQueueIPython"]
 
     env_subprocess.call_env_pip(cmd)
 
